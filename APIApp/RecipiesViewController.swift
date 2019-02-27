@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class RecipiesViewController: UITableViewController {
+    var sources = [[String: String]]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Recipies"
+        let query = "http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3"
     }
 
 
